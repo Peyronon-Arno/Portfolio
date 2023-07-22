@@ -1,0 +1,74 @@
+.about-container {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.about-container h1 {
+  padding: 1rem;
+}
+
+.about-me-container {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  color: #fff;
+}
+
+.right-about {
+  height: 100%;
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #1a1919;
+}
+
+.right-about p {
+  text-align: left;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.left-about {
+  height: 100%;
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  background-color: #1a1919;
+  border-right: 3px solid #252424;
+}
+
+.left-about h3,
+.contact p,
+.btn-cv {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.social-about,
+.contact {
+  width: 100%;
+}
+
+.links a {
+  width: 20%;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.clic-underline {
+  padding: 0.2rem;
+  text-decoration: underline;
+}
+
+.clic-underline:hover {
+  color: rgba(165, 161, 161, 0.884);
+}
+
+.btn-cv {
+  padding: 0.5rem;
+}

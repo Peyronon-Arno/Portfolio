@@ -1,0 +1,53 @@
+.experience-heading {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.experience-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding-bottom: 5rem;
+}
+
+.experience-card {
+  background-color: #1a1919;
+  padding: 1.2rem 1rem;
+}
+
+.experience-card:hover {
+  background-color: #252424;
+}
+
+.experience-title {
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.pro-details p {
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.experience-card .dates {
+  justify-content: space-between;
+  color: #fff;
+  text-align: center;
+}
+
+.experience-card .addresses {
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and(max-width:740px) {
+  .experience-container {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}

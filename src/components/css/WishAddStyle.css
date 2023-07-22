@@ -1,0 +1,36 @@
+.label-form {
+  color: black;
+  font-size: 20px;
+}
+
+.input-form {
+  border: 1px solid rgb(175, 173, 173);
+  margin-bottom: 4%;
+  color: black;
+}
+
+.last {
+    margin-bottom: 2%
+}
+
+.btn-form {
+  width: 15%;
+  height: 10%;
+  font-size: 20px;
+  border: 2px solid rgb(1, 218, 1);
+  background-color: rgb(1, 218, 1);
+  color: white;
+  padding: 1% 0.5% 1% 0.50%;
+  border-radius: 22px;
+}
+
+.btn-form:hover {
+  background-color: rgba(2, 206, 2, 0.664);
+  cursor: pointer;
+}
+
+.title-form {
+  color: black;
+  font-size: 30px;
+  padding-bottom: 2%;
+}

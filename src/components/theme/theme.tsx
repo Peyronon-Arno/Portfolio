@@ -1,0 +1,15 @@
+export const darkTheme = {
+  background: "rgb(28, 27, 31)",
+  contentBlock: "rgb(74, 68, 88)",
+  textPrimary: "#ffffff",
+  textSecondary: "rgb(232, 222, 248)",
+  itemBlock: "rgb(74, 68, 88)",
+  navigation: "rgb(74, 68, 88)",
+  navigationText: "rgb(232, 222, 248)",
+  navigationTextSelected: "rgb(198, 162, 255)",
+  buttonBackground: "rgb(208, 188, 255)",
+  buttonBorderColor: "rgba(0, 0, 0, 0)",
+  buttonColorText: "rgb(56, 30, 114)",
+  modalText: "#000000",
+  modalBackground: "rgb(255, 251, 254)",
+};
