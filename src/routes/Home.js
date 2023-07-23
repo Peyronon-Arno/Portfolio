@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 import { NavBar } from "../components/js/navbar/NavBar";
 import { Footer } from "../components/js/footer/Footer";
 
-export const Home = () => {
+export const Home = (props) => {
+  const { theme } = props;
   return (
     <div className="main">
-      <NavBar />
+      <NavBar theme={theme} />
       <HomeDescription />
       <AboutDescription />
       <ProjectContent />

@@ -5,27 +5,34 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { navBarItems } from "./NavBarItems";
 
-export const NavBar = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+export const NavBar = (props) => {
+  const { theme } = props;
 
-  const [color, setColor] = useState(false);
-  const changeColor = () => {
-    setColor(window.scrollY >= 100);
+  const [click, setClick] = useState(false);
+  const [changeColor, setChangeColor] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const doChangeColor = () => {
+    setChangeColor(window.scrollY >= 100);
   };
 
-  window.addEventListener("scroll", changeColor);
+  window.addEventListener("scroll", doChangeColor);
+
   return (
-    <div className={color ? "header header-bg" : "header"}>
-      <Link to="/">
-        <h1>Peyronon Arno</h1>
+    <div className={changeColor ? "header header-bg" : "header"}>
+      <Link className="link" style={{ color: theme.text }} to="/">
+        <h2>Peyronon Arno</h2>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         {navBarItems.map((item) => {
           return (
             <li>
-              <Link to={item.link}>
-                <h1>{item.title}</h1>
+              <Link
+                className="link"
+                style={{ color: theme.text }}
+                to={item.link}
+              >
+                <h2>{item.title}</h2>
               </Link>
             </li>
           );
@@ -33,9 +40,9 @@ export const NavBar = () => {
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={40} style={{ color: "#fff" }} />
+          <FaTimes size={40} style={{ color: theme.text }} />
         ) : (
-          <FaBars size={40} style={{ color: "#fff" }} />
+          <FaBars size={40} style={{ color: theme.text }} />
         )}
       </div>
     </div>

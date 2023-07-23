@@ -15,7 +15,9 @@
 }
 
 .nav-menu {
+  margin: 0;
   display: flex;
+  list-style: none;
 }
 
 .nav-menu li {
@@ -30,6 +32,14 @@
 .hamburger {
   display: none;
   cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.active {
+  color: red;
 }
 
 @media screen and (max-width: 1040px) {

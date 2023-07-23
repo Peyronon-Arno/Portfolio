@@ -8,10 +8,11 @@ import { AboutContact } from "../components/js/about/AboutContact";
 import { AboutHistory } from "../components/js/about/AboutHistory";
 import { Footer } from "../components/js/footer/Footer";
 
-const About = () => {
+export const About = (props) => {
+  const { theme } = props;
   return (
     <div>
-      <NavBar />
+      <NavBar theme={theme} />
       <PageHeader
         heading="À propos"
         text="Je suis etudiant en licence professionnelle Métiers de l'Informatique, Application Web à l'IUT de Clermont-Ferrand (UCA)"
@@ -32,5 +33,3 @@ const About = () => {
     </div>
   );
 };
-
-export default About;
