@@ -5,10 +5,11 @@ import { ProjectExplaination } from "../components/js/projects/ProjectExplainati
 import { NavBar } from "../components/js/navbar/NavBar";
 import { Footer } from "../components/js/footer/Footer";
 
-export const Project = () => {
+export const Project = (props) => {
+  const { theme } = props;
   return (
     <div>
-      <NavBar />
+      <NavBar theme={theme} />
       <PageHeader
         heading="PROJETS"
         text="Voici quelques projets que j'ai réalisé lors de mon cursus"

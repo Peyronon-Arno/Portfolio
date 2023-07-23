@@ -16,18 +16,23 @@ export const NavBar = (props) => {
     setChangeColor(window.scrollY >= 100);
   };
 
-  window.addEventListener("scroll", changeColor);
+  window.addEventListener("scroll", doChangeColor);
+
   return (
     <div className={changeColor ? "header header-bg" : "header"}>
-      <Link to="/">
-        <h1>Peyronon Arno</h1>
+      <Link className="link" style={{ color: theme.text }} to="/">
+        <h2>Peyronon Arno</h2>
       </Link>
       <ul className={hamburgerClick ? "nav-menu active" : "nav-menu"}>
         {navBarItems.map((item) => {
           return (
             <li>
-              <Link to={item.link}>
-                <h1>{item.title}</h1>
+              <Link
+                className="link"
+                style={{ color: theme.text }}
+                to={item.link}
+              >
+                <h2>{item.title}</h2>
               </Link>
             </li>
           );
@@ -37,7 +42,7 @@ export const NavBar = (props) => {
         {hamburgerClick ? (
           <FaTimes size={40} style={{ color: theme.text }} />
         ) : (
-          <FaBars size={40} style={{ color: "#fff" }} />
+          <FaBars size={40} style={{ color: theme.text }} />
         )}
       </div>
     </div>
