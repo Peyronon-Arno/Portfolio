@@ -1,6 +1,6 @@
 import React from "react";
 import { PageHeader } from "../components/js/PageHeader";
-import { AboutDescription } from "../components/js/about/AboutDescription";
+import { AboutDescription } from "../components/js/about/AboutDescription/AboutDescription";
 import { AboutHobys } from "../components/js/about/AboutHobys/AboutHobys";
 import { NavBar } from "../components/js/navbar/NavBar";
 import "../components/css/AboutMeStyle.css";
@@ -16,7 +16,7 @@ const About = () => {
         heading="À propos"
         text="Je suis etudiant en licence professionnelle Métiers de l'Informatique, Application Web à l'IUT de Clermont-Ferrand (UCA)"
       />
-      <AboutDescription />
+      <AboutDescription theme={theme} />
       <div className="about-container bg-dark">
         <h1>
           Passionné d'informatique depuis mon enfance, je m'intéresse à

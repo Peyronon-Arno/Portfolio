@@ -5,22 +5,24 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { navBarItems } from "./NavBarItems";
 
-export const NavBar = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+export const NavBar = (props) => {
+  const { theme } = props;
 
-  const [color, setColor] = useState(false);
-  const changeColor = () => {
-    setColor(window.scrollY >= 100);
+  const [hamburgerClick, setHamburgerClick] = useState(false);
+  const [changeColor, setChangeColor] = useState(false);
+
+  const handleClick = () => setHamburgerClick(!hamburgerClick);
+  const doChangeColor = () => {
+    setChangeColor(window.scrollY >= 100);
   };
 
   window.addEventListener("scroll", changeColor);
   return (
-    <div className={color ? "header header-bg" : "header"}>
+    <div className={changeColor ? "header header-bg" : "header"}>
       <Link to="/">
         <h1>Peyronon Arno</h1>
       </Link>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
+      <ul className={hamburgerClick ? "nav-menu active" : "nav-menu"}>
         {navBarItems.map((item) => {
           return (
             <li>
@@ -32,8 +34,8 @@ export const NavBar = () => {
         })}
       </ul>
       <div className="hamburger" onClick={handleClick}>
-        {click ? (
-          <FaTimes size={40} style={{ color: "#fff" }} />
+        {hamburgerClick ? (
+          <FaTimes size={40} style={{ color: theme.text }} />
         ) : (
           <FaBars size={40} style={{ color: "#fff" }} />
         )}

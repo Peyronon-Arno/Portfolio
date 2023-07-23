@@ -7,7 +7,8 @@
   max-width: 1140px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: 1fr 1fr;
   grid-gap: 50px;
   padding-bottom: 5rem;
 }
@@ -15,6 +16,7 @@
 .project-card {
   background-color: #1a1919;
   padding: 1.2rem 1rem;
+  position: relative;
 }
 
 .project-card img {
@@ -23,26 +25,37 @@
 }
 
 .project-title {
-  color: white;
   padding: 2rem 0;
   text-align: center;
 }
 
-.pro-details p {
+.project-details p {
   padding-bottom: 2rem;
   font-size: 1.1rem;
   text-align: center;
 }
 
-.pro-btns {
+.project-card-see-detail {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  left: 33%;
 }
 
-@media screen and(max-width:740px) {
+@media screen and (max-width: 990px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 740px) {
   .project-container {
     max-width: 90%;
-    margin: auto;
     grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: auto;
   }
 }

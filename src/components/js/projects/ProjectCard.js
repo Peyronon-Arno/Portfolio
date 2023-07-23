@@ -1,18 +1,22 @@
-import "../../css/WorkCardStyle.css";
+import "../../css/ProjectCardStyle.css";
 
 import React from "react";
 export const ProjectCard = (props) => {
+  const { theme, imgsrc, title, text, view } = props;
   return (
     <div className="project-card">
-      <img src={props.imgsrc} alt="img" />
-      <h2 className="project-title">{props.title}</h2>
-      <div className="pro-details">
-        <p>{props.text}</p>
-        <div className="pro-btns">
-          <a className="btn" href={props.view}>
-            Voir en détail
-          </a>
-        </div>
+      <img src={imgsrc} alt="img" />
+      <h2 className="project-title" style={{ color: theme.text }}>
+        {title}
+      </h2>
+      <div className="project-details" style={{ color: theme.text }}>
+        <p>{text}</p>
+        <div className="pro-btns"></div>
+      </div>
+      <div className="project-card-see-detail">
+        <a className="btn btn-primary projet-card-btn" href={view}>
+          Voir en détail
+        </a>
       </div>
     </div>
   );
