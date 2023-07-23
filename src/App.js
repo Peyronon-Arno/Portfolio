@@ -13,6 +13,8 @@ export const App = () => {
   const [defineTheme, setDefineTheme] = useState(true);
   const theme = defineTheme ? lightTheme : darkTheme;
 
+  const onChangeTheme = () => setDefineTheme(!defineTheme);
+
   return (
     <Routes>
       <Route path="/" element={<Home theme={theme} />} />

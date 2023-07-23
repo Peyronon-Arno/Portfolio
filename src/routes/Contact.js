@@ -9,9 +9,13 @@ export const Contact = (props) => {
   return (
     <div>
       <NavBar theme={theme} />
-      <PageHeader heading="Contactez-moi !" text="Ayons une discussion" />
+      <PageHeader
+        heading="Contactez-moi !"
+        text="Ayons une discussion"
+        theme={theme}
+      />
       <ContactForm />
-      <Footer />
+      <Footer theme={theme} />
     </div>
   );
 };

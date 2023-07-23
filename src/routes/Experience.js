@@ -16,6 +16,7 @@ export const Experience = (props) => {
       <PageHeader
         heading="Mes expériences"
         text="Voic mes compétences, mes qualités ainsi que des expériences profesionnelles que j'ai pu réaliser"
+        theme={theme}
       />
       <div className="experience">
         <ExperienceCompetence />
@@ -23,7 +24,7 @@ export const Experience = (props) => {
       </div>
       <ExperiencePro />
       <ExperienceCursus />
-      <Footer />
+      <Footer theme={theme} />
     </>
   );
 };

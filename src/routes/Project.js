@@ -13,10 +13,11 @@ export const Project = (props) => {
       <PageHeader
         heading="PROJETS"
         text="Voici quelques projets que j'ai réalisé lors de mon cursus"
+        theme={theme}
       />
-      <ProjectContent />
+      <ProjectContent theme={theme} />
       <ProjectExplaination />
-      <Footer />
+      <Footer theme={theme} />
     </div>
   );
 };
