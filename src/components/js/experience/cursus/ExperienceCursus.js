@@ -3,9 +3,16 @@ import React from "react";
 import { ExperienceCursusContent } from "./ExperienceCursusContent";
 import { experienceCursusData } from "./ExperienceCursusData";
 
-export const ExperienceCursus = () => {
+export const ExperienceCursus = (props) => {
+  const { theme } = props;
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: theme.cardBlue,
+        marginTop: "1rem",
+        color: theme.text,
+      }}
+    >
       <h1 className="experience-heading">Mes formations</h1>
       <div className="experience-container">
         {experienceCursusData.map((val, index) => {
@@ -18,6 +25,7 @@ export const ExperienceCursus = () => {
               schoolName={val.schoolName}
               explaination={val.explaination}
               link={val.link}
+              theme={theme}
             />
           );
         })}

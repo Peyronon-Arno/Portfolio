@@ -1,15 +1,24 @@
 export const experienceCursusData = [
   {
-    index: 1,
-    dDebut: "2022",
+    index: 2,
+    dDebut: "2023",
     dFin: "Présent",
+    title: "Master Expert en développement web",
+    explaination: "Formation en alternance",
+    schoolName: "Lyon Ynov",
+    link: "https://www.ynov.com/campus/lyon/",
+  },
+  {
+    index: 2,
+    dDebut: "2022",
+    dFin: "2023",
     title: "Licence professionnelle Métiers de l'Informatique Application Web",
     explaination: "Formation en alternance",
     schoolName: "IUT de Clermont-Ferrand",
     link: "https://iut.uca.fr/formations/but-informatique-clermont",
   },
   {
-    index: 2,
+    index: 3,
     dDebut: "2020",
     dFin: "2022",
     title: "DUT Informatique",
@@ -18,7 +27,7 @@ export const experienceCursusData = [
     link: "https://iut.uca.fr/formations/but-informatique-clermont",
   },
   {
-    index: 3,
+    index: 4,
     dDebut: "2018",
     dFin: "2020",
     title: "Baccalauréat STI2D",

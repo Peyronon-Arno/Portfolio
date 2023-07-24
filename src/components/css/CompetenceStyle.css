@@ -1,3 +1,31 @@
-.competence-container {
-    width: 30%;
+.experience-progress-container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.column-image {
+  max-width: 50px;
+  width: 100%;
+}
+
+.column-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
 }

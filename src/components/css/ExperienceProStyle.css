@@ -13,7 +13,6 @@
 }
 
 .experience-card {
-  background-color: #1a1919;
   padding: 1.2rem 1rem;
 }
 
@@ -22,7 +21,6 @@
 }
 
 .experience-title {
-  color: white;
   padding: 2rem 0;
   text-align: center;
 }
@@ -35,12 +33,10 @@
 
 .experience-card .dates {
   justify-content: space-between;
-  color: #fff;
   text-align: center;
 }
 
 .experience-card .addresses {
-  color: #fff;
   text-align: center;
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../../css/ProgressBarStyle.css";
-const ProgressBarQualite = (props) => {
+export const ProgressBarQualite = (props) => {
   return (
     <div className="skill-box">
       <span className="title">{props.title}</span>
@@ -12,5 +12,3 @@ const ProgressBarQualite = (props) => {
     </div>
   );
 };
-
-export default ProgressBarQualite;

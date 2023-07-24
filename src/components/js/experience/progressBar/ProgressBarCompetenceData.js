@@ -3,7 +3,6 @@ import htmlcss from "../../../../assets/htmlcss.jpg";
 import reactjs from "../../../../assets/reactjs.png";
 import java from "../../../../assets/java.jpg";
 import git from "../../../../assets/git.png";
-import csharp from "../../../../assets/csharp.jpg";
 
 export const ProgressBarData = [
   {
@@ -32,14 +31,20 @@ export const ProgressBarData = [
   },
   {
     index: 5,
-    title: "C#",
+    title: "React Native",
     percentage: "55%",
-    img: csharp,
+    img: "",
   },
   {
     index: 6,
     title: "Git",
     percentage: "70%",
     img: git,
+  },
+  {
+    index: 7,
+    title: "Nginx",
+    percentage: "65%",
+    img: "",
   },
 ];
