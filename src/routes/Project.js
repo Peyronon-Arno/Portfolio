@@ -16,7 +16,7 @@ export const Project = (props) => {
         theme={theme}
       />
       <ProjectContent theme={theme} />
-      <ProjectExplaination />
+      <ProjectExplaination theme={theme} />
       <Footer theme={theme} />
     </div>
   );

@@ -6,7 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 export const ProjectContent = (props) => {
   const { theme } = props;
   return (
-    <div style={{ backgroundColor: theme.cardGrey }}>
+    <div style={{ backgroundColor: theme.cardGrey, marginTop: "1rem" }}>
       <h1 className="project-heading" style={{ color: theme.text }}>
         Mes projets
       </h1>

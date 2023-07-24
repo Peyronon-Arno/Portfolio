@@ -22,8 +22,8 @@ export const Experience = (props) => {
         className="experience"
         style={{ backgroundColor: theme.cardBlue, color: theme.text }}
       >
-        <ExperienceCompetence />
-        <ExperiencesQualite />
+        <ExperienceCompetence theme={theme} />
+        <ExperiencesQualite theme={theme} />
       </div>
       <ExperiencePro theme={theme} />
       <ExperienceCursus theme={theme} />

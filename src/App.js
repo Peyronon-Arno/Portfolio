@@ -19,9 +19,9 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<Home theme={theme} />} />
       <Route path="/about" element={<About theme={theme} />} />
-      <Route path="/contact" element={<Contact theme={theme} />} />
       <Route path="/experience" element={<Experience theme={theme} />} />
       <Route path="/project" element={<Project theme={theme} />} />
+      <Route path="/contact" element={<Contact theme={theme} />} />
     </Routes>
   );
 };

@@ -21,7 +21,11 @@ export const AboutHobys = (props) => {
       <div className="about-hobys-container">
         {aboutHobysItems.map((item, index) => {
           return (
-            <div className="about-hobys-card" key={index}>
+            <div
+              className="about-hobys-card"
+              style={{ backgroundColor: theme.experienceCard }}
+              key={index}
+            >
               <h3>{item.title}</h3>
               <div>{item.description}</div>
             </div>
