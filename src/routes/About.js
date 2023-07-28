@@ -8,15 +8,11 @@ import { Footer } from "../components/js/footer/Footer";
 import { AboutContent } from "../components/js/about/AboutContent";
 
 export const About = (props) => {
-  const { theme } = props;
+  const { theme, onChangeLanguage } = props;
   return (
     <div>
-      <NavBar theme={theme} />
-      <PageHeader
-        heading="À propos"
-        text="Je suis etudiant en licence professionnelle Métiers de l'Informatique, Application Web à l'IUT de Clermont-Ferrand (UCA)"
-        theme={theme}
-      />
+      <NavBar theme={theme} onChangeLanguage={onChangeLanguage} />
+      <PageHeader heading="KEY_ABOUT" text="KEY_ABOUT_INTRO" theme={theme} />
       <AboutDescription theme={theme} />
       <AboutContent theme={theme} />
       <AboutHobys theme={theme} />

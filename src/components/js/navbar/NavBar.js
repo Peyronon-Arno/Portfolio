@@ -5,8 +5,16 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { navBarItems } from "./NavBarItems";
 
+import { useTranslation } from "react-i18next";
+
+const languages = {
+  fr: { nativeName: "French" },
+  en: { nativeName: "English" },
+};
+
 export const NavBar = (props) => {
-  const { theme } = props;
+  const { t, i18n } = useTranslation();
+  const { theme, onChangeLanguage } = props;
 
   const [hamburgerClick, setHamburgerClick] = useState(false);
   const [changeColor, setChangeColor] = useState(false);
@@ -21,7 +29,7 @@ export const NavBar = (props) => {
   return (
     <div className={changeColor ? "header header-bg" : "header"}>
       <Link className="link" style={{ color: theme.text }} to="/">
-        <h2>Peyronon Arno</h2>
+        <h2>{t("KEY_FULL_NAME")}</h2>
       </Link>
       <ul className={hamburgerClick ? "nav-menu active" : "nav-menu"}>
         {navBarItems.map((item) => {
@@ -32,12 +40,26 @@ export const NavBar = (props) => {
                 style={{ color: theme.text }}
                 to={item.link}
               >
-                <h2>{item.title}</h2>
+                <h2>{t(item.title)}</h2>
               </Link>
             </li>
           );
         })}
+        <li>
+          {Object.keys(languages).map((language) => {
+            return (
+              <button
+                key={language}
+                onClick={() => onChangeLanguage(language)}
+                disabled={i18n.resolvedLanguage === language}
+              >
+                {languages[language].nativeName}
+              </button>
+            );
+          })}
+        </li>
       </ul>
+
       <div className="hamburger" onClick={handleClick}>
         {hamburgerClick ? (
           <FaTimes size={40} style={{ color: theme.text }} />

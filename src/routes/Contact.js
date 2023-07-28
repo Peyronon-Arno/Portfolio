@@ -5,10 +5,10 @@ import { NavBar } from "../components/js/navbar/NavBar";
 import { Footer } from "../components/js/footer/Footer";
 
 export const Contact = (props) => {
-  const { theme } = props;
+  const { theme, onChangeLanguage } = props;
   return (
     <div>
-      <NavBar theme={theme} />
+      <NavBar theme={theme} onChangeLanguage={onChangeLanguage} />
       <PageHeader
         heading="Contactez-moi !"
         text="Ayons une discussion"

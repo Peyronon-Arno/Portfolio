@@ -1,22 +1,22 @@
 export const navBarItems = [
   {
     link: "/",
-    title: "Accueil",
+    title: "KEY_HOME",
   },
   {
     link: "/about",
-    title: "À propos",
+    title: "KEY_ABOUT",
   },
   {
     link: "/experience",
-    title: "Experiences",
+    title: "KEY_EXPERIENCES",
   },
   {
     link: "/project",
-    title: "Projets",
+    title: "KEY_PROJECTS",
   },
   {
     link: "/contact",
-    title: "Contact",
+    title: "KEY_CONTACT",
   },
 ];

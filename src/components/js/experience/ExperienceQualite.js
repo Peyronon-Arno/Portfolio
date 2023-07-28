@@ -1,8 +1,11 @@
 import React from "react";
 import { ProgressBarQualiteData } from "./progressBar/ProgressBarQualiteData";
 import { ProgressBarQualite } from "./progressBar/ProgressBarQualite";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 export const ExperiencesQualite = ({ theme }) => {
+  const { t } = useTranslation();
   return (
     <div
       className="experience-progress-container"
@@ -10,7 +13,7 @@ export const ExperiencesQualite = ({ theme }) => {
         backgroundColor: theme.experienceCard,
       }}
     >
-      <h1 className="project-heading">Mes qualités</h1>
+      <h1 className="project-heading">{t("KEY_MY_QUALITIES")}</h1>
       <div
         className="container"
         style={{

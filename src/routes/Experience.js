@@ -9,13 +9,13 @@ import { ExperiencesQualite } from "../components/js/experience/ExperienceQualit
 import { Footer } from "../components/js/footer/Footer";
 
 export const Experience = (props) => {
-  const { theme } = props;
+  const { theme, onChangeLanguage } = props;
   return (
     <div>
-      <NavBar theme={theme} />
+      <NavBar theme={theme} onChangeLanguage={onChangeLanguage} />
       <PageHeader
-        heading="Mes expériences"
-        text="Voic mes compétences, mes qualités ainsi que des expériences profesionnelles que j'ai pu réaliser"
+        heading="KEY_MY_EXPERIENCES"
+        text="KEY_EXPERIENCES_INTRO"
         theme={theme}
       />
       <div

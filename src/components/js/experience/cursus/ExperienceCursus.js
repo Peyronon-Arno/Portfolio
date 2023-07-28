@@ -2,9 +2,11 @@ import React from "react";
 
 import { ExperienceCursusContent } from "./ExperienceCursusContent";
 import { experienceCursusData } from "./ExperienceCursusData";
+import { useTranslation } from "react-i18next";
 
 export const ExperienceCursus = (props) => {
   const { theme } = props;
+  const { t } = useTranslation();
   return (
     <div
       style={{
@@ -13,7 +15,7 @@ export const ExperienceCursus = (props) => {
         color: theme.text,
       }}
     >
-      <h1 className="experience-heading">Mes formations</h1>
+      <h1 className="experience-heading">{t("KEY_MY_FORMATIONS")}</h1>
       <div className="experience-container">
         {experienceCursusData.map((val, index) => {
           return (
